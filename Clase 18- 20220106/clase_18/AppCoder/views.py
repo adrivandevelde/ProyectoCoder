@@ -11,3 +11,18 @@ def crear_curso(request, camada):
     Curso.save()
 
     return HttpResponse (f'Curso creado {camada}')
+
+def inicio(request):
+    return ('inicio')
+
+def cursos(request):
+    return ('curso')  
+
+def profesores(request):
+    return ('profesores')
+
+def estudiantes(request):
+    return ('estudiantes')
+
+def entregables(request):
+    return ('entregables')

@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from AppCoder.views import crear_curso
+from AppCoder.views import crear_curso, inicio, profesores
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('crearcurso/<camada>', crear_curso),
+    path('coder/inicio', inicio),
+    path('coder/profesores', profesores),
 ]
