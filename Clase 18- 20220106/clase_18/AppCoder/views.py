@@ -13,16 +13,18 @@ def crear_curso(request, camada):
     return HttpResponse (f'Curso creado {camada}')
 
 def inicio(request):
-    return ('inicio')
+    return render(request, 'AppCoder/inicio.html') # luego de esto tengo que ir a settings y agregar la dir de los templates
+    # return HttpResponse ('inicio')
 
 def cursos(request):
-    return ('curso')  
+    return HttpResponse ('curso')  
 
 def profesores(request):
-    return ('profesores')
+    return render(request, 'AppCoder/profesores.html')
+    #return HttpResponse ('profesores')
 
 def estudiantes(request):
-    return ('estudiantes')
+    return HttpResponse ('estudiantes')
 
 def entregables(request):
-    return ('entregables')
+    return HttpResponse ('entregables')
